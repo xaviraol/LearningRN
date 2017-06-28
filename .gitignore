@@ -2,6 +2,10 @@
 #
 .DS_Store
 
+# TS Built files
+#
+builtjs
+
 # Xcode
 #
 build/
