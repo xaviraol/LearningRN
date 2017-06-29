@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
+import { StackNavigator } from 'react-navigation';
 
-export default class Main extends Component<undefined, undefined> {
+class MainScreen extends Component<undefined, undefined> {
+    static navigationOptions = {
+        title: 'LearningRN'
+    };
+
     render() {
         return (
              <View style={styles.container}>
@@ -19,6 +24,10 @@ export default class Main extends Component<undefined, undefined> {
         );
     }
 }
+
+export default StackNavigator({
+    MainScreen: { screen: MainScreen }
+});
 
 const styles = StyleSheet.create({
   container: {
