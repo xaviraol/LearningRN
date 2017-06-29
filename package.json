@@ -12,7 +12,6 @@
         "tslint": "tslint src/**/*.ts"
     },
     "dependencies": {
-        "typescript": "^2.1.5",
         "blueimp-md5": "^2.7.0",
         "intl": "^1.2.5",
         "moment-timezone": "^0.5.11",
@@ -20,10 +19,12 @@
         "react-intl": "^2.2.3",
         "react-native": "^0.44.2",
         "react-native-keychain": "^1.2.0",
+        "react-navigation": "^1.0.0-beta.11",
         "react-redux": "^5.0.2",
         "redux": "^3.6.0",
         "redux-logger": "^2.8.1",
-        "redux-thunk": "^2.2.0"
+        "redux-thunk": "^2.2.0",
+        "typescript": "^2.1.5"
     },
     "devDependencies": {
         "@types/jest": "^18.1.1",
