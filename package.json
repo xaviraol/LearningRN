@@ -12,6 +12,7 @@
         "tslint": "tslint src/**/*.ts"
     },
     "dependencies": {
+        "typescript": "^2.1.5",
         "blueimp-md5": "^2.7.0",
         "intl": "^1.2.5",
         "moment-timezone": "^0.5.11",
