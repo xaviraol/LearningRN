@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import { StackNavigator } from 'react-navigation';
+import Newsfeed from './Newsfeed';
 
-class MainScreen extends Component<undefined, undefined> {
+class MainScreen extends Component<{ navigation }, undefined> {
     static navigationOptions = {
         title: 'LearningRN'
     };
@@ -10,8 +11,8 @@ class MainScreen extends Component<undefined, undefined> {
     render() {
         return (
              <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
+        <Text style={styles.welcome} onPress={() => this.props.navigation.navigate('Second')}>
+          Go to next page!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
@@ -26,7 +27,8 @@ class MainScreen extends Component<undefined, undefined> {
 }
 
 export default StackNavigator({
-    MainScreen: { screen: MainScreen }
+    MainScreen: { screen: MainScreen },
+    Second: { screen: Newsfeed }
 });
 
 const styles = StyleSheet.create({
