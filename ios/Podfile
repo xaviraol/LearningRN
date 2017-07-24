@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+def default_pods
+    pod 'Fabric'
+    pod 'Crashlytics'
+end
+
+target 'LearningRN' do
+    use_frameworks!
+    default_pods
+end
+
+
